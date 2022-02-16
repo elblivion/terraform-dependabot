@@ -10,3 +10,13 @@ updates:
   commit-message:
     prefix: build
     include: scope
+- package-ecosystem: terraform
+  directory: "/three"
+  schedule:
+    interval: daily
+    time: "09:00"
+    timezone: UTC
+  open-pull-requests-limit: 5
+  commit-message:
+    prefix: build
+    include: scope
